@@ -16,6 +16,7 @@
             $("#frm-login").submit(function(event) {
                 event.preventDefault();
                 if ($("#nickname").val() !== '') {
+                    $.cookie("chat-login", $("#nickname").val());
                     window.location = "/chat";
                     successLogin();
                 }
