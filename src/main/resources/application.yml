@@ -1,0 +1,23 @@
+logging:
+  level:
+    org.springframework: 'DEBUG'
+
+management:
+  websocket:
+    trace-inbound: true
+    trace-outbound: false
+
+server:
+  port: 8080
+
+java:
+  version: 1.8
+
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5433/chatDB'
+    username: 'postgres'
+    password: '123456'
+    driverClassName: 'org.postgresql.Driver'
+  jpa.hibernate:
+    ddl-auto: 'update'
